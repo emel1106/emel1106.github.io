@@ -3,338 +3,420 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emel Biallas — Creative Strategy & Campaign Leadership</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<title>Emel Biallas — Brand & Digital Creative</title>
+<meta name="description" content="Brand-led creative built for the pure player. Campaign work for Tommy Hilfiger, Calvin Klein and the wider fashion field.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --cream: #F5F2EC;
-    --bone: #EAE6DC;
-    --ink: #1A1916;
-    --ink-mid: #4A4844;
-    --ink-light: #8A8880;
-    --rule: rgba(26,25,22,0.12);
+  :root{
+    --paper:#FBFAF7;
+    --ink:#14110E;
+    --ink-soft:#6B655C;
+    --line:rgba(20,17,14,0.14);
+    --display:'Bodoni Moda', Georgia, serif;
+    --body:'Instrument Sans', system-ui, sans-serif;
+    --mono:'IBM Plex Mono', ui-monospace, monospace;
   }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { background: var(--cream); color: var(--ink); font-family: 'Instrument Sans', sans-serif; font-weight: 300; line-height: 1.6; overflow-x: hidden; }
 
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.5rem 3rem; display: flex; justify-content: space-between; align-items: center; background: rgba(245,242,236,0.92); backdrop-filter: blur(8px); border-bottom: 0.5px solid var(--rule); }
-  .nav-name { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 400; letter-spacing: 0.5px; }
-  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-  .nav-links a { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-mid); text-decoration: none; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--ink); }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{display:block;max-width:100%;}
+  a{color:inherit;}
 
-  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; }
-  .hero-left { padding: 6rem 4rem 6rem 6rem; display: flex; flex-direction: column; justify-content: center; border-right: 0.5px solid var(--rule); }
-  .hero-label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--ink-light); margin-bottom: 2rem; animation: fadeUp 0.6s ease 0.1s both; }
-  .hero-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(52px, 6vw, 80px); font-weight: 300; line-height: 1.0; letter-spacing: -1px; margin-bottom: 2.5rem; animation: fadeUp 0.6s ease 0.2s both; }
-  .hero-name em { font-style: italic; font-weight: 300; }
-  .hero-intro { font-size: 15px; line-height: 1.9; color: var(--ink-mid); max-width: 420px; margin-bottom: 3rem; animation: fadeUp 0.6s ease 0.3s both; }
-  .hero-intro strong { color: var(--ink); font-weight: 500; }
-  .hero-contact { font-size: 12px; color: var(--ink-light); line-height: 2; animation: fadeUp 0.6s ease 0.4s both; }
-  .hero-contact a { color: var(--ink-light); text-decoration: none; border-bottom: 0.5px solid var(--rule); }
-  .hero-right { padding: 6rem 6rem 6rem 4rem; display: flex; flex-direction: column; justify-content: flex-end; }
-  .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-bottom: 3rem; animation: fadeUp 0.6s ease 0.3s both; }
-  .stat { padding: 2rem; background: var(--bone); }
-  .stat-number { font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 300; line-height: 1; margin-bottom: 0.5rem; }
-  .stat-label { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-light); line-height: 1.4; }
-  .hero-scroll { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-light); display: flex; align-items: center; gap: 1rem; }
-  .hero-scroll::before { content: ''; display: block; width: 40px; height: 0.5px; background: var(--ink-light); }
+  .mono{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+  }
 
-  section { padding: 6rem; border-top: 0.5px solid var(--rule); }
-  .section-header { display: grid; grid-template-columns: 200px 1fr; gap: 4rem; margin-bottom: 4rem; align-items: baseline; }
-  .section-number { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--ink-light); padding-top: 6px; }
-  .section-title { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 300; letter-spacing: -0.5px; }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,64px);}
 
-  .projects { padding: 0 6rem 6rem; }
-  .project { display: grid; grid-template-columns: 200px 1fr 1fr; gap: 4rem; padding: 3.5rem 0; border-top: 0.5px solid var(--rule); align-items: start; opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-  .project.visible { opacity: 1; transform: translateY(0); }
-  .project-num { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: var(--bone); line-height: 1; margin-bottom: 1rem; }
-  .project-year { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-light); }
-  .project-brand { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; line-height: 1.1; margin-bottom: 4px; }
-  .project-campaign { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-light); margin-bottom: 1.5rem; }
-  .project-strategy { font-size: 14px; line-height: 1.85; color: var(--ink-mid); margin-bottom: 1.5rem; }
-  .project-strategy strong { color: var(--ink); font-weight: 500; }
-  .channels { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.5rem; }
-  .channel { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border: 0.5px solid var(--rule); color: var(--ink-light); }
-  .project-links { display: flex; flex-direction: column; gap: 8px; }
-  .project-link { font-size: 12px; color: var(--ink-light); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: color 0.2s; }
-  .project-link::after { content: '↗'; font-size: 10px; }
-  .project-link:hover { color: var(--ink); }
-  .project-visual { aspect-ratio: 3/4; overflow: hidden; background: var(--bone); }
-  .project-visual img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.8s ease; filter: grayscale(10%); }
-  .project-visual:hover img { transform: scale(1.04); }
+  /* ---------- HERO ---------- */
+  header{
+    min-height:88vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-top:14vh;
+    padding-bottom:8vh;
+  }
+  .eyebrow{margin-bottom:2.2rem;}
+  .name{
+    font-family:var(--display);
+    font-style:italic;
+    font-weight:500;
+    font-size:clamp(56px,13vw,168px);
+    line-height:0.92;
+    letter-spacing:-0.01em;
+    margin-bottom:1.8rem;
+  }
+  .thesis{
+    font-family:var(--display);
+    font-style:italic;
+    font-weight:400;
+    font-size:clamp(22px,3.2vw,34px);
+    color:var(--ink);
+    margin-bottom:1.6rem;
+  }
+  .intro{
+    max-width:54ch;
+    font-size:clamp(15px,1.5vw,18px);
+    color:var(--ink-soft);
+  }
+  .intro strong{color:var(--ink);font-weight:500;}
 
-  .exp-item { padding: 2.5rem 0; border-top: 0.5px solid var(--rule); display: grid; grid-template-columns: 200px 1fr; gap: 4rem; grid-column: 1 / -1; }
-  .exp-period { font-size: 11px; letter-spacing: 1px; color: var(--ink-light); padding-top: 4px; line-height: 1.6; }
-  .exp-role { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; margin-bottom: 4px; }
-  .exp-company { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-light); margin-bottom: 1rem; }
-  .exp-desc { font-size: 14px; line-height: 1.85; color: var(--ink-mid); }
+  /* ---------- SECTIONS ---------- */
+  .section-head{
+    padding:7vh 0 3vh;
+    border-top:1px solid var(--line);
+  }
+  .section-head h2{
+    font-family:var(--display);
+    font-weight:500;
+    font-size:clamp(26px,4vw,44px);
+    line-height:1.05;
+    margin-top:1rem;
+    max-width:18ch;
+  }
 
-  footer { padding: 3rem 6rem; border-top: 0.5px solid var(--rule); display: flex; justify-content: space-between; align-items: center; }
-  .footer-note { font-size: 11px; color: var(--ink-light); line-height: 1.8; }
-  .footer-contact { font-size: 11px; color: var(--ink-light); text-align: right; line-height: 1.8; }
-  .footer-contact a { color: var(--ink-light); text-decoration: none; }
+  /* ---------- PROJECTS ---------- */
+  .project{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:clamp(28px,5vw,72px);
+    align-items:center;
+    padding:6vh 0;
+  }
+  .project.flip .project-visual{order:2;}
+  .project.flip .project-body{order:1;}
+  .project-visual{overflow:hidden;}
+  .project-visual img,
+  .project-visual .film{
+    width:100%;
+    aspect-ratio:4/5;
+    object-fit:cover;
+    background:#e9e6df;
+  }
+  .project-visual.wide img,
+  .project-visual.wide .film{aspect-ratio:16/10;}
+  .film{position:relative;border:0;}
+  .project-brand{
+    font-family:var(--display);
+    font-weight:500;
+    font-size:clamp(28px,3.6vw,42px);
+    line-height:1.04;
+    margin:0.4rem 0 0.2rem;
+  }
+  .project-campaign{
+    font-family:var(--display);
+    font-style:italic;
+    font-size:clamp(18px,2vw,22px);
+    color:var(--ink-soft);
+    margin-bottom:1.3rem;
+  }
+  .project-copy{
+    font-size:clamp(14px,1.4vw,16px);
+    color:var(--ink);
+    margin-bottom:1.5rem;
+    max-width:46ch;
+  }
+  .channels{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.55rem 1.1rem;
+    margin-bottom:1.5rem;
+  }
+  .channels span{
+    font-family:var(--mono);
+    font-size:10.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  .channels span + span{position:relative;}
+  .channels span + span::before{
+    content:"·";
+    position:absolute;
+    left:-0.78rem;
+    color:var(--line);
+  }
+  .project-link{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:var(--ink);
+    border-bottom:1px solid var(--ink);
+    padding-bottom:3px;
+    transition:opacity .2s ease;
+  }
+  .project-link:hover{opacity:0.55;}
+  .project-link:focus-visible{outline:2px solid var(--ink);outline-offset:4px;}
 
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  /* ---------- FIELD GRID ---------- */
+  .field-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:clamp(28px,4vw,56px);
+    padding:5vh 0;
+  }
+  .field-card .project-visual img{aspect-ratio:3/4;margin-bottom:1.3rem;}
+  .field-card .project-brand{font-size:clamp(22px,2.6vw,30px);}
+  .field-card .project-campaign{font-size:16px;margin-bottom:1rem;}
+  .field-card .project-copy{font-size:14px;margin-bottom:1.1rem;}
 
-  @media (max-width: 900px) {
-    nav { padding: 1.5rem 2rem; }
-    .nav-links { display: none; }
-    .hero { grid-template-columns: 1fr; min-height: auto; }
-    .hero-left { padding: 4rem 2rem 2rem; border-right: none; border-bottom: 0.5px solid var(--rule); }
-    .hero-right { padding: 2rem; }
-    section { padding: 3rem 2rem; }
-    .projects { padding: 0 2rem 3rem; }
-    .section-header { grid-template-columns: 1fr; gap: 1rem; }
-    .project { grid-template-columns: 1fr; gap: 2rem; }
-    .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
-    footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem; }
-    .footer-contact { text-align: center; }
+  /* ---------- FOOTER ---------- */
+  footer{
+    border-top:1px solid var(--line);
+    margin-top:6vh;
+    padding:7vh 0 9vh;
+  }
+  .foot-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr;
+    gap:clamp(24px,5vw,64px);
+    align-items:end;
+  }
+  .foot-name{
+    font-family:var(--display);
+    font-style:italic;
+    font-weight:500;
+    font-size:clamp(34px,6vw,64px);
+    line-height:0.95;
+  }
+  .foot-note{
+    font-size:13px;
+    color:var(--ink-soft);
+    max-width:42ch;
+  }
+  .foot-contact{margin-top:1.6rem;}
+  .foot-contact a{
+    display:inline-block;
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.1em;
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid var(--line);
+    padding-bottom:2px;
+    margin-right:1.4rem;
+  }
+  .foot-contact a:hover{border-color:var(--ink);}
+
+  /* ---------- MOTION ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  @media (max-width:760px){
+    .project{grid-template-columns:1fr;gap:1.6rem;}
+    .project.flip .project-visual{order:0;}
+    .project.flip .project-body{order:0;}
+    .field-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .project-visual img,.project-visual .film{aspect-ratio:4/3;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .reveal{opacity:1;transform:none;transition:none;}
   }
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="nav-name">Emel Biallas</div>
-  <ul class="nav-links">
-    <li><a href="#work">Work</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<div class="wrap">
 
-<div class="hero">
-  <div class="hero-left">
-    <div class="hero-label">Creative Strategy &amp; Campaign Leadership</div>
-    <h1 class="hero-name">Emel<br><em>Biallas</em></h1>
-    <p class="hero-intro">
-      I build creative organisations that turn cultural intelligence into commercial impact.
-      I set the creative vision. I brief, select and direct the teams that bring it to life.
-      <strong>Strategy, partner selection, casting, final sign-off: mine.</strong>
-    </p>
-    <div class="hero-contact">
-      emel.biallas@gmail.com<br>
-      +49 151 405 24752<br>
-      Hamburg · Berlin<br>
-      <a href="https://linkedin.com/in/emel-biallas-b9555015">LinkedIn ↗</a>
-    </div>
+  <!-- HERO -->
+  <header>
+    <div class="eyebrow mono">Brand &amp; Digital Creative — Built for the Pure Player</div>
+    <h1 class="name">Emel Biallas</h1>
+    <p class="thesis">Entertain or die.</p>
+    <p class="intro">For two decades I have built brands that turn attention into commerce. For the past four years I have led the creative engine behind their campaigns on Europe&rsquo;s largest fashion platform &mdash; where the consumer scrolls, taps and buys. <strong>Tommy Hilfiger and Calvin Klein</strong> both live in this work, brought to life exactly where they need to win. Move people first, and the product moves with them.</p>
+  </header>
+
+  <!-- SECTION 1 -->
+  <div class="section-head reveal">
+    <div class="mono">Selected Work — Section I</div>
+    <h2>Tommy Hilfiger &amp; Calvin Klein</h2>
   </div>
-  <div class="hero-right">
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-number">100+</div>
-        <div class="stat-label">Creative experts led</div>
+
+  <!-- TOMMY — ALEX CONSANI FILM -->
+  <article class="project reveal">
+    <div class="project-visual wide">
+      <iframe class="film" src="https://player.vimeo.com/video/1078957302?h=d418e5071a&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Zalando x Tommy Hilfiger x Alex Consani"></iframe>
+    </div>
+    <div class="project-body">
+      <div class="mono">Tommy Hilfiger · 2025</div>
+      <h3 class="project-brand">Alex Consani</h3>
+      <p class="project-campaign">&lsquo;The Commercial&rsquo;</p>
+      <p class="project-copy">I brought Alex Consani &mdash; one of the most culturally charged faces in fashion right now &mdash; into Tommy&rsquo;s world for a film built to travel. It leads with motion and a fandom that follows Alex everywhere, turning a brand moment into reach the platform compounds.</p>
+      <div class="channels"><span>Film</span><span>Paid Social</span><span>Onsite</span></div>
+      <a class="project-link" href="https://vimeo.com/1078957302" target="_blank" rel="noopener">Watch the film &#8599;</a>
+    </div>
+  </article>
+
+  <!-- TOMMY MY TEAM -->
+  <article class="project flip reveal">
+    <div class="project-visual">
+      <img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1720553216455-6RVSO4LJEL6J1WE19S2V/TH_ZBD_2405_1080x1080_INT_F_Set2_1_by_cLab_1_cLab_Model_No.jpg" alt="Tommy Hilfiger My Team campaign" loading="lazy">
+    </div>
+    <div class="project-body">
+      <div class="mono">Tommy Hilfiger · 2024</div>
+      <h3 class="project-brand">My Team</h3>
+      <p class="project-campaign">&lsquo;Hilfiger Team&rsquo;</p>
+      <p class="project-copy">Tommy&rsquo;s sport-coded Hilfiger Team collection needed real cultural weight, so I cast Lucien from Emily in Paris and Simona from White Lotus alongside their actual teams &mdash; people who built success together. A bespoke spinoff, the MVP Awards, carried the story past the hero film and held engagement across platforms.</p>
+      <div class="channels"><span>TikTok</span><span>Meta</span><span>In-Store</span><span>Influencer</span><span>Event</span></div>
+      <a class="project-link" href="https://bradenstudio.com/tommy-hilfiger-my-team" target="_blank" rel="noopener">View campaign &#8599;</a>
+    </div>
+  </article>
+
+  <!-- CALVIN PURE RELEASE -->
+  <article class="project reveal">
+    <div class="project-visual">
+      <img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1723400488482-7F2AEF5XIE0YPL7JQQHG/LC_230630_CKxZalando_06_06815_Color_RET.jpg" alt="Calvin Klein Pure Release campaign" loading="lazy">
+    </div>
+    <div class="project-body">
+      <div class="mono">Calvin Klein · 2023</div>
+      <h3 class="project-brand">Pure Release</h3>
+      <p class="project-campaign">&lsquo;Classically cool CK&rsquo;</p>
+      <p class="project-copy">Calvin asked for classic CK cool with a release valve. I built it around model Lucky Blue Smith and singer Lomijoh, shot by Lea Colombo, then rolled it the way the platform rewards: a TikTok Branded Mission, BTS talent interviews and a Dazed editorial, all converting onsite across Zalando and Calvin Klein.</p>
+      <div class="channels"><span>TikTok</span><span>Meta</span><span>Snapchat</span><span>YouTube</span><span>Onsite</span><span>Advertorial</span></div>
+      <a class="project-link" href="https://bradenstudio.com/calvin-klein-pure-release" target="_blank" rel="noopener">View campaign &#8599;</a>
+    </div>
+  </article>
+
+  <!-- TOMMY JEANS DENIM LAB -->
+  <article class="project flip reveal">
+    <div class="project-visual">
+      <img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1689870411821-VCN1537ZT2P1X6ZDLJER/gwenmeta-tommyjeansxzalando-kesselhaus-00744.jpg" alt="Tommy Jeans Denim Lab campaign" loading="lazy">
+    </div>
+    <div class="project-body">
+      <div class="mono">Tommy Jeans · 2022</div>
+      <h3 class="project-brand">Denim Lab</h3>
+      <p class="project-campaign">&lsquo;The Lab on tour&rsquo;</p>
+      <p class="project-copy">To make Tommy Jeans&rsquo; sustainable denim land with Gen Z, I put the Denim Lab on tour &mdash; mobile machinery and recycled-denim workshops in Berlin, Amsterdam and Vienna, hosted by influencers who hyped each stop. Event content fed straight into paid social and onsite, so the experience kept performing long after the doors closed.</p>
+      <div class="channels"><span>Paid Social</span><span>Onsite</span><span>Influencer</span><span>Event</span></div>
+      <a class="project-link" href="https://bradenstudio.com/tommy-jeans-denim-lab" target="_blank" rel="noopener">View campaign &#8599;</a>
+    </div>
+  </article>
+
+  <!-- CALVIN NEW NOSTALGIA -->
+  <article class="project reveal">
+    <div class="project-visual">
+      <img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1636279504473-S2JGFB0XENWP4BSECS1I/QTB_ZalandoxCalvinKlein_2725_R2.jpg" alt="Calvin Klein The New Nostalgia campaign" loading="lazy">
+    </div>
+    <div class="project-body">
+      <div class="mono">Calvin Klein · 2021</div>
+      <h3 class="project-brand">The New Nostalgia</h3>
+      <p class="project-campaign">&lsquo;The New 90s&rsquo;</p>
+      <p class="project-copy">For Calvin&rsquo;s New 90s streetwear, I anchored the idea in a feeling Gen Z owns &mdash; nostalgia for the here and now. The campaign moved in phases from hero creative into a user-generated and influencer layer, living across Zalando and Calvin Klein onsite, in CK boutiques from D&uuml;sseldorf to Milan, and an iD advertorial.</p>
+      <div class="channels"><span>Paid Social</span><span>Onsite</span><span>In-Store</span><span>Influencer</span><span>Advertorial</span></div>
+      <a class="project-link" href="https://bradenstudio.com/calvin-klein-the-new-nostalgia" target="_blank" rel="noopener">View campaign &#8599;</a>
+    </div>
+  </article>
+
+  <!-- SECTION 2 -->
+  <div class="section-head reveal">
+    <div class="mono">Selected Work — Section II</div>
+    <h2>The wider field</h2>
+  </div>
+
+  <div class="field-grid">
+
+    <article class="field-card reveal">
+      <div class="project-visual">
+        <img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1720596924007-MRK8O6IBTYGND3JOIV0M/290224_LC_ZALANDO_NIKE_BMJ_10_RED_GROUP-SHOT_0106_v7.jpg" alt="Nike Find Your Feel campaign" loading="lazy">
       </div>
-      <div class="stat">
-        <div class="stat-number">200+</div>
-        <div class="stat-label">Campaigns per year</div>
+      <div class="mono">Nike · 2024</div>
+      <h3 class="project-brand">Find Your Feel</h3>
+      <p class="project-campaign">&lsquo;Levels with Badmomzjay&rsquo;</p>
+      <p class="project-copy">Why make an ad when you can make a cultural moment? I partnered with rapper Badmomzjay to visualise her track &lsquo;Levels&rsquo; in Nike &mdash; music, style and movement in one piece that earned 500K+ organic views on her own channels beyond paid reach.</p>
+      <div class="channels"><span>TikTok</span><span>Meta</span><span>YouTube</span><span>Organic</span></div>
+      <a class="project-link" href="https://bradenstudio.com/nike-find-your-feel" target="_blank" rel="noopener">View campaign &#8599;</a>
+    </article>
+
+    <article class="field-card reveal">
+      <div class="project-visual">
+        <img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1720556540365-1END2XS2O9E4FOAFGGFD/Zalando_Versace_J%26V_03_-Female---Close-up_ROUND-3.jpg" alt="Versace Jeans Couture SS24 campaign" loading="lazy">
       </div>
-      <div class="stat">
-        <div class="stat-number">MBAI</div>
-        <div class="stat-label">AI-certified leader</div>
+      <div class="mono">Versace Jeans Couture · 2024</div>
+      <h3 class="project-brand">SS&rsquo;24</h3>
+      <p class="project-campaign">&lsquo;This ain&rsquo;t Texas&rsquo;</p>
+      <p class="project-copy">This ain&rsquo;t Texas, but it&rsquo;s Versace. To show the cowboy-coded SS&rsquo;24 collection I took it out west &mdash; one confident image system that travelled across paid and organic social and onsite.</p>
+      <div class="channels"><span>TikTok</span><span>Meta</span><span>Organic</span><span>Onsite</span></div>
+      <a class="project-link" href="https://bradenstudio.com/versace-jeans-couture-2024" target="_blank" rel="noopener">View campaign &#8599;</a>
+    </article>
+
+    <article class="field-card reveal">
+      <div class="project-visual">
+        <img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1689861950271-N388PZMXD2R29MAJBXHF/Boss_FW22_2210_1080x1080_INT_M_Set1_3_by_cLab_1_cLab_Model_No.jpg" alt="BOSS Be Your Own BOSS campaign" loading="lazy">
       </div>
-      <div class="stat">
-        <div class="stat-number">4</div>
-        <div class="stat-label">Languages</div>
+      <div class="mono">BOSS · 2022</div>
+      <h3 class="project-brand">#BeYourOwnBOSS</h3>
+      <p class="project-campaign">&lsquo;Breakout Sessions&rsquo;</p>
+      <p class="project-copy">I reinterpreted BOSS&rsquo; global #BeYourOwnBOSS line for Europe&rsquo;s millennials through two people rewriting their own rules. Each hosted a BOSS Breakout Session &mdash; a shoppable performance you unlocked by QR from out-of-home, turning a poster into a storefront.</p>
+      <div class="channels"><span>Paid Social</span><span>OOH</span><span>Onsite</span><span>Influencer</span></div>
+      <a class="project-link" href="https://bradenstudio.com/beyourownboss" target="_blank" rel="noopener">View campaign &#8599;</a>
+    </article>
+
+    <article class="field-card reveal">
+      <div class="project-visual">
+        <img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1723398123309-17JSMXLBMLT5YIVY6HDQ/230629_HA_Zalando_Lacoste_S04_0235_R4.jpg" alt="Lacoste Open Invitation campaign" loading="lazy">
+      </div>
+      <div class="mono">Lacoste · 2023</div>
+      <h3 class="project-brand">Open Invitation</h3>
+      <p class="project-campaign">&lsquo;Paris takeover&rsquo;</p>
+      <p class="project-copy">Lacoste&rsquo;s heritage needed to feel like liberation. With Brandon Flynn and friends flipping old-world society scenes through a playful croco lens, I drove a full Paris takeover &mdash; citywide OOH and an open-to-public event that earned media across Europe.</p>
+      <div class="channels"><span>OOH</span><span>TikTok</span><span>Event</span><span>Onsite</span></div>
+      <a class="project-link" href="https://bradenstudio.com/lacoste-open-invitation" target="_blank" rel="noopener">View campaign &#8599;</a>
+    </article>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="reveal">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-name">Entertain<br>or die.</div>
+      </div>
+      <div>
+        <p class="foot-note">All work commissioned and strategically directed by Emel Biallas, Head of Creative Strategy &amp; Campaigns, Zalando Studios Berlin GmbH (Dec 2021 &ndash; Present), leading 100+ across creative strategy, content production and campaign management. Creative execution: Braden Studio.</p>
+        <div class="foot-contact">
+          <a href="mailto:emel.biallas@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/emelbiallas" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
     </div>
-    <div class="hero-scroll">Scroll to work</div>
-  </div>
+  </footer>
+
 </div>
-
-<section id="work">
-  <div class="section-header">
-    <div class="section-number">01 — Selected Work</div>
-    <h2 class="section-title">Zalando Studios Berlin<br>2021 — 2026</h2>
-  </div>
-</section>
-
-<div class="projects">
-
-  <div class="project">
-    <div class="project-index">
-      <div class="project-num">01</div>
-      <div class="project-year">2024</div>
-    </div>
-    <div class="project-meta">
-      <div class="project-brand">Nike</div>
-      <div class="project-campaign">'Find Your Feel'</div>
-      <p class="project-strategy">Why make an ad when you can make a cultural moment? We partnered with German rapper Badmomzjay to visualise her new track 'Levels' in Nike gear — merging music, style and movement into one piece of content. The film lived on her YouTube and Instagram channels alongside Zalando placements, generating <strong>500K+ organic views</strong> beyond paid reach.</p>
-      <div class="channels"><span class="channel">TikTok</span><span class="channel">Meta</span><span class="channel">YouTube</span><span class="channel">Organic Social</span></div>
-      <div class="project-links"><a class="project-link" href="https://bradenstudio.com/nike-find-your-feel" target="_blank">View campaign</a></div>
-    </div>
-    <div class="project-visual"><img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1720596924007-MRK8O6IBTYGND3JOIV0M/290224_LC_ZALANDO_NIKE_BMJ_10_RED_GROUP-SHOT_0106_v7.jpg" alt="Nike Find Your Feel" loading="lazy"></div>
-  </div>
-
-  <div class="project">
-    <div class="project-index">
-      <div class="project-num">02</div>
-      <div class="project-year">2024</div>
-    </div>
-    <div class="project-meta">
-      <div class="project-brand">Tommy Hilfiger</div>
-      <div class="project-campaign">'My Team'</div>
-      <p class="project-strategy">Tommy's sport-coded 'Hilfiger Team NYC' collection needed real cultural weight. I cast Lucien from Emily in Paris and Simona from White Lotus alongside their real-life teams — people who built their success together. A bespoke spinoff social concept, the MVP Awards, deepened the narrative beyond the hero film.</p>
-      <div class="channels"><span class="channel">TikTok</span><span class="channel">Meta</span><span class="channel">In-Store</span><span class="channel">Influencer</span><span class="channel">Event</span></div>
-      <div class="project-links"><a class="project-link" href="https://bradenstudio.com/tommy-hilfiger-my-team" target="_blank">View campaign</a></div>
-    </div>
-    <div class="project-visual"><img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1720553216455-6RVSO4LJEL6J1WE19S2V/TH_ZBD_2405_1080x1080_INT_F_Set2_1_by_cLab_1_cLab_Model_No.jpg" alt="Tommy Hilfiger My Team" loading="lazy"></div>
-  </div>
-
-  <div class="project">
-    <div class="project-index">
-      <div class="project-num">03</div>
-      <div class="project-year">2023</div>
-    </div>
-    <div class="project-meta">
-      <div class="project-brand">Lacoste</div>
-      <div class="project-campaign">'Open Invitation'</div>
-      <p class="project-strategy">Lacoste's heritage carried weight — but it needed to feel like liberation, not legacy. Featuring Brandon Flynn and friends, the campaign flipped antiquated society scenes through a playful Lacoste lens. I drove the full 360 strategy including a Paris city takeover: city-wide OOH and an open-to-public event that generated significant earned media across Europe.</p>
-      <div class="channels"><span class="channel">Out of Home</span><span class="channel">TikTok</span><span class="channel">Meta</span><span class="channel">Event</span><span class="channel">Onsite</span></div>
-      <div class="project-links"><a class="project-link" href="https://bradenstudio.com/lacoste-open-invitation" target="_blank">View campaign</a></div>
-    </div>
-    <div class="project-visual"><img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1723398123309-17JSMXLBMLT5YIVY6HDQ/230629_HA_Zalando_Lacoste_S04_0235_R4.jpg" alt="Lacoste Open Invitation" loading="lazy"></div>
-  </div>
-
-  <div class="project">
-    <div class="project-index">
-      <div class="project-num">04</div>
-      <div class="project-year">2022</div>
-    </div>
-    <div class="project-meta">
-      <div class="project-brand">Lacoste</div>
-      <div class="project-campaign">'To Be Honest'</div>
-      <p class="project-strategy">Shift Lacoste from 'classic and preppy' to 'cool and expressive' for Gen Z. I set the strategic frame — hero a generation that dares to move differently — and commissioned a coming-of-age film in movie-trailer format. A dual influencer layer bridged fiction and real life, with talent interviews drawing parallels between the story and their own lived experience.</p>
-      <div class="channels"><span class="channel">TikTok</span><span class="channel">Meta</span><span class="channel">Snapchat</span><span class="channel">Influencer</span><span class="channel">Onsite</span></div>
-      <div class="project-links"><a class="project-link" href="https://bradenstudio.com/lacoste-to-be-honest" target="_blank">View campaign</a></div>
-    </div>
-    <div class="project-visual"><img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1645396353684-OPXQWE6PR2I6Q184WD08/01_castan_lacoste-5_RET.jpg" alt="Lacoste To Be Honest" loading="lazy"></div>
-  </div>
-
-  <div class="project">
-    <div class="project-index">
-      <div class="project-num">05</div>
-      <div class="project-year">2022</div>
-    </div>
-    <div class="project-meta">
-      <div class="project-brand">BOSS</div>
-      <div class="project-campaign">'#BeYourOwnBOSS'</div>
-      <p class="project-strategy">BOSS had a global campaign. My job was to make it feel genuinely European — not just translated. I pushed for talent that embodied the idea from the inside: Trans activist Phenix and dancer Brandon, both people who've refused to slot into industry norms. Added an interactive OOH layer — QR-driven shoppable performance experiences in key European cities.</p>
-      <div class="channels"><span class="channel">Out of Home</span><span class="channel">TikTok</span><span class="channel">Shoppable Video</span><span class="channel">Influencer</span></div>
-      <div class="project-links"><a class="project-link" href="https://bradenstudio.com/beyourownboss" target="_blank">View campaign</a></div>
-    </div>
-    <div class="project-visual"><img src="https://images.squarespace-cdn.com/content/v1/53c44cbde4b056f82568d1bb/1689861950271-N388PZMXD2R29MAJBXHF/Boss_FW22_2210_1080x1080_INT_M_Set1_3_by_cLab_1_cLab_Model_No.jpg" alt="BOSS BeYourOwnBOSS" loading="lazy"></div>
-  </div>
-
-  <div class="project">
-    <div class="project-index">
-      <div class="project-num">06</div>
-      <div class="project-year">2023</div>
-    </div>
-    <div class="project-meta">
-      <div class="project-brand">Zalando</div>
-      <div class="project-campaign">'Do We Love Love Again?'</div>
-      <p class="project-strategy">Romanticism felt culturally irrelevant — performative, predictable, out of step with how a generation actually feels about love. Instead of leaning into Valentine's Day as usual, we asked the question nobody was asking: <strong>do we even love love anymore?</strong> And then answered it — by reimagining romance for a generation that had quietly stopped believing in it.</p>
-      <div class="channels"><span class="channel">Editorial</span><span class="channel">Social</span><span class="channel">Onsite</span></div>
-      <div class="project-links"><a class="project-link" href="https://www.johnyonatanjacoby.com/portfolio/v-day" target="_blank">View editorial</a></div>
-    </div>
-    <div class="project-visual"><img src="https://images.squarespace-cdn.com/content/v1/64f5b28ab30f7051bfbf9817/ff5e604b-dbd4-416d-93ea-f2e3125df15a/_szilveszter_mako_Zalando-11.jpg" alt="Do We Love Love Again" loading="lazy"></div>
-  </div>
-
-  <div class="project">
-    <div class="project-index">
-      <div class="project-num">07</div>
-      <div class="project-year">2022–26</div>
-    </div>
-    <div class="project-meta">
-      <div class="project-brand">A. Røge Hove · Sunnei · The North Face</div>
-      <div class="project-campaign">Designer &amp; Lifestyle Campaigns</div>
-      <p class="project-strategy">Building Zalando's credibility in designer and streetwear meant producing content that holds its own alongside brand-owned editorial. Working with Creative Director John Yonatan Jacoby, I set the aesthetic direction, selected talent, and signed off every final image across this portfolio of designer campaigns.</p>
-      <div class="channels"><span class="channel">Editorial</span><span class="channel">Social</span><span class="channel">Onsite</span></div>
-      <div class="project-links">
-        <a class="project-link" href="https://www.johnyonatanjacoby.com/portfolio/a-roege-hove" target="_blank">A. Røge Hove</a>
-        <a class="project-link" href="https://www.johnyonatanjacoby.com/portfolio/sunnei" target="_blank">Sunnei</a>
-        <a class="project-link" href="https://www.johnyonatanjacoby.com/portfolio/the-north-face" target="_blank">The North Face</a>
-      </div>
-    </div>
-    <div class="project-visual"><img src="https://images.squarespace-cdn.com/content/v1/64f5b28ab30f7051bfbf9817/19d874fa-3f97-4d25-8210-b4b93af48308/251105_ZALANDO_ARoegeHove_Look_03_0532_RET.jpg" alt="A Roege Hove" loading="lazy"></div>
-  </div>
-
-</div>
-
-<section id="experience">
-  <div class="section-header">
-    <div class="section-number">02 — Experience</div>
-    <h2 class="section-title">Twenty years across<br>fashion, luxury &amp; FMCG</h2>
-  </div>
-
-  <div class="exp-item">
-    <div class="exp-period">Dec 2021 — Jun 2026<br>Berlin</div>
-    <div class="exp-content">
-      <div class="exp-role">Head of Creative Strategy &amp; Campaigns</div>
-      <div class="exp-company">Zalando Studios Berlin GmbH</div>
-      <p class="exp-desc">Built a team of 20 into a 100+ person in-house creative organisation through six mergers in four and a half years. Shifted the model from content production to performance-driven creative strategy. Managed a double-digit million budget and over 200 campaigns per year across Europe's most competitive fashion brands. Pioneer of GenAI integration into large-scale content production.</p>
-    </div>
-  </div>
-
-  <div class="exp-item">
-    <div class="exp-period">Oct 2012 — Oct 2020<br>Hamburg</div>
-    <div class="exp-content">
-      <div class="exp-role">Senior Manager, International Brand Communications</div>
-      <div class="exp-company">Montblanc International GmbH</div>
-      <p class="exp-desc">Eight years repositioning a luxury maison from the inside. Led the global agency pitch that defined the brand's new era — new ambassador Hugh Jackman, new visual identity, new campaign architecture. Directed campaigns with Charlotte Casiraghi, the Picasso family and 20th Century Fox. €4.6M budget across 22 international markets.</p>
-    </div>
-  </div>
-
-  <div class="exp-item">
-    <div class="exp-period">Nov 2010 — Sep 2012<br>Berlin · Chicago</div>
-    <div class="exp-content">
-      <div class="exp-role">Senior Product Manager</div>
-      <div class="exp-company">August Storck KG</div>
-      <p class="exp-desc">Repositioned Werther's Original for contemporary audiences across USA, Canada and Western Europe. North America strategy delivered +8% online engagement and +10% sales growth.</p>
-    </div>
-  </div>
-
-  <div class="exp-item">
-    <div class="exp-period">Apr 2004 — Oct 2010<br>Hamburg · Paris · New York</div>
-    <div class="exp-content">
-      <div class="exp-role">Global Brand Development — Dove, Axe &amp; Knorr</div>
-      <div class="exp-company">Unilever Germany GmbH</div>
-      <p class="exp-desc">Six years learning the craft of brand building at scale — design thinking, rigorous creative testing, cross-regional business alignment. Built business cases and led roadshows across three global brands. Core contributor to the Dove Self-Esteem Project.</p>
-    </div>
-  </div>
-
-  <div class="exp-item">
-    <div class="exp-period">2024<br>Hochschule Fresenius</div>
-    <div class="exp-content">
-      <div class="exp-role">MBAI — Master of Business in Artificial Intelligence</div>
-      <div class="exp-company">Leaders of AI × Hochschule Fresenius</div>
-      <p class="exp-desc">Strategic application of AI in business environments. Applied directly to creative production workflows at Zalando Studios.</p>
-    </div>
-  </div>
-
-</section>
-
-<footer id="contact">
-  <div class="footer-note">
-    Creative execution: Braden Studio · John Yonatan Jacoby Creative Direction<br>
-    Strategic direction, casting &amp; final sign-off: Emel Biallas
-  </div>
-  <div class="footer-contact">
-    emel.biallas@gmail.com<br>
-    +49 151 405 24752<br>
-    <a href="https://linkedin.com/in/emel-biallas-b9555015">LinkedIn ↗</a>
-  </div>
-</footer>
 
 <script>
-  const projects = document.querySelectorAll('.project');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  projects.forEach(p => observer.observe(p));
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      els.forEach(function(e){e.classList.add('in');});
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+      });
+    },{threshold:0.12});
+    els.forEach(function(e){io.observe(e);});
+  })();
 </script>
 
 </body>
